@@ -3,6 +3,7 @@ window.onload =
         var urlParams = parseURLParams(window.location.href);
         console.log(urlParams['t'][0]);
         getJSONP('https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&key=AIzaSyAYVGBe8I4aYNlnvUR5uTRny48f-XPXpao', function(data){
+        console.log(data)
         youtubeSearch(urlParams['t'][0])
     });
     }
